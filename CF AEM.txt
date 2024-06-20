@@ -1,0 +1,125 @@
+Angular components
+Basic level
+What is @Component
+How to create a new component
+How to use css Component styles with :host
+@Input decorator and its property binding
+@Output decorator ,EventEmitter and event bindings
+Lifecycle methods:onInit,onChange,onDestroy
+How to use template reference variable.
+
+Advance level
+Containers and presentational components
+logic inside services
+Component/module level providers
+Observables,Subjects and behaviourSubjects
+AsyncPipe
+change detection strategies :onDefault/onPush
+Shadow DOM
+good practices
+
+
+
+
+
+
+
+
+
+
+To create a Content Fragment (CF) model for the provided query, you can follow these steps:
+
+Identify the fields and their data types in the query:
+
+cards: Object
+items: Array
+listItems: Object
+...on OfferModel: Object
+_path: String
+_metadata: Object
+stringMetadata: Array of Objects
+name: String
+value: String
+description: Object
+json: JSON
+asset: Object
+...on ImageRef: Object
+_dynamicUrl: String
+Map the identified fields to the corresponding CF model fields:
+
+Create a new CF model with the following fields:
+cards: Nested CF model (repeating)
+items: Nested CF model (repeating)
+listItems: Nested CF model (repeating)
+_path: Text field
+_metadata: Nested CF model (repeating)
+name: Text field
+value: Text field
+description: Rich Text field
+asset: Nested CF model (repeating)
+_dynamicUrl: Text field
+Save the CF model and ensure that it is associated with the appropriate content fragment template.
+
+By following these steps, you can create a CF model that aligns with the structure of the provided query. The CF model will enable you to capture the relevant data fields and their corresponding data types for the imageList query.
+
+
+
+
+
+User
+how to make nested CF
+ChatGPT
+To create a nested Content Fragment (CF) model, you can follow these steps:
+
+Identify the fields and their data types for the nested CF:
+
+Determine the fields and their data types within the nested CF.
+Create a new CF model for the nested CF:
+
+Access the AEM authoring interface.
+Navigate to the Content Fragment Models section.
+Create a new CF model for the nested CF by clicking on "Create" or "New Content Fragment Model".
+Define the fields within the nested CF model based on the identified fields and their data types.
+Define the relationship between the parent CF and the nested CF:
+
+In the parent CF model, add a field with the data type "Nested Content Fragment" or "Nested Multi Content Fragment".
+Configure the field to reference the nested CF model created in the previous step.
+Save the CF models and associate them with the appropriate content fragment templates:
+
+Save both the parent CF model and the nested CF model.
+Ensure that the CF models are associated with the desired content fragment templates.
+Publish the CF models and templates to make them available for content creation.
+By following these steps, you can create a nested CF model that allows you to represent complex data structures within your content fragments. This enables you to organize and manage related content in a hierarchical manner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
